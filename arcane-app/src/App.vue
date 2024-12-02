@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ArcaneInfo/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ArcaneInfo from './components/ArcaneInfo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ArcaneInfo
   }
 }
 </script>
