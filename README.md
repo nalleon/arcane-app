@@ -1,7 +1,7 @@
 <div align="justify">
 
 # arcane-app
-
+>✒️ __Autor__:  Nabil L.A. ([@nalleon](https://github.com/nalleon))
 <div align="center">
 <img src="./img/main-image.png">
 </div>
