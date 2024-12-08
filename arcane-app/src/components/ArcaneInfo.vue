@@ -67,7 +67,7 @@
                                     <td>{{ ch.name }}</td>
                                     <td>{{ ch.origins }}</td>
                                     <td>{{ ch.specialAbility }}</td>
-                                    <td>{{ ch.allies }}</td>
+                                    <td>{{ ch.allies.join(', ') }}</td>
                                     <td>{{ ch.missionFulfilled ? 'Sí' : 'No' }}</td>
                                 </tr>
                             </tbody>
@@ -90,14 +90,14 @@
             name: 'Jinx',
             origins: 'Piltover',
             specialAbility: 'Manipulación de explosivos',
-            allies: 'Ekko',
+            allies: ['Ekko'],
             missionFulfilled: true
         },
         {
             name: 'Vi',
             origins: 'Zaun',
             specialAbility: 'Combate cuerpo a cuerpo',
-            allies: 'Caitlyn',
+            allies: ['Caitlyn'],
             missionFulfilled: false
         }
     ]);
@@ -105,29 +105,39 @@
     const name = ref('');
     const origins = ref('');
     const specialAbility = ref('');
-    const allies = ref('');
+    const allies = ref([]);
     const missionFulfilled = ref(false);
 
     /**
      * Function to add a character to the array of characters
      */
     const addCharacter = () => {
+        const alliesList = allies.value.split(',').map(allie => allie.trim());
+
         const newCharacter = {
             name: name.value,
             origins: origins.value,
             specialAbility: specialAbility.value,
-            allies: allies.value,
+            allies: alliesList,
             missionFulfilled: missionFulfilled.value,
         };
 
         characters.value.push(newCharacter);
 
+        putDefaultValues();
+    };
+
+
+    /**
+     * Function to reset the form inputs and set default values
+     */
+    const putDefaultValues = () => {
         name.value = '';
         origins.value = '';
         specialAbility.value = '';
         allies.value = '';
         missionFulfilled.value = false;
-    };
+    }
 
 </script>
 
