@@ -59,7 +59,15 @@ vue create arcane-app
 
 ## Estructura de carpetas
 
+En la práctica trabajaremos con la siguiente estructura de carpetas y con un único componente llamada 'AracaneInfo'.
+
+<div align="center">
+<img src="./img/p7.png">
+</div>
+
 ## Detalles del componente
+
+En nuestro componen
 
 ## Funcionalidades
 
