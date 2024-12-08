@@ -78,7 +78,7 @@ vue create arcane-app
 
 ## Estructura de carpetas
 
-En la práctica trabajaremos con la siguiente estructura de carpetas y con un único componente llamada 'AracaneInfo'.
+En la práctica trabajaremos con la siguiente estructura de carpetas y con un único componente llamada 'ArcaneInfo'.
 
 <div align="center">
 <img src="./img/p7.png">
@@ -239,7 +239,7 @@ La visualización del componente estará distribuida en dos columnas para pantal
 
 ## Funcionalidades
 
-Para el funcionamiento correcto del formulario se ha implementado la directiva modal de v-model para tomar los datos de este. Además, por parte de la tabla se hemos utilizado la directiva del for para mostrar los datos concretos de cada personaje ya que los guardamos en un array.
+Para el funcionamiento correcto del formulario se ha implementado la directiva de v-model para tomar los datos de este. Además, por parte de la tabla se hemos utilizado la directiva de v-for para mostrar los datos concretos de cada personaje ya que los guardamos en un array.
 
 - Directiva v-model:
 
